@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allarme Salute: Lo studio sul sonno - Il Corriere Nazionale</title>
+    <style>
+        /* Reset e Stili Base che imitano i quotidiani italiani */
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a { text-decoration: none; color: #000; }
+        a:hover { text-decoration: underline; }
+
+        /* Header stile "Corriere" / "Repubblica" */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .top-bar {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: #666;
+            text-transform: uppercase;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            font-family: 'Times New Roman', serif;
+            font-size: 48px;
+            font-weight: bold;
+            color: #000;
+            letter-spacing: -1px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .sub-logo {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: #d10000; /* Rosso tipico giornali */
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Menu Navigazione */
+        nav {
+            background: #fff;
+            border-bottom: 2px solid #000;
+            padding: 10px 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        nav a { margin: 0 15px; color: #333; }
+
+        /* Layout Articolo */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 40px;
+        }
+
+        .main-content { flex: 3; }
+        .sidebar { flex: 1; border-left: 1px solid #eee; padding-left: 20px; }
+
+        /* Tipografia Articolo */
+        .category {
+            font-family: Arial, sans-serif;
+            color: #d10000;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 38px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .summary {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .meta-info {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: #888;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .article-body {
+            font-size: 19px;
+            color: #222;
+        }
+
+        .article-body p { margin-bottom: 20px; }
+
+        .article-body strong { font-weight: bold; }
+        
+        /* Elementi grafici finti */
+        .fake-img {
+            width: 100%;
+            height: 350px;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+            position: relative;
+            background-image: linear-gradient(45deg, #2c3e50, #bdc3c7);
+        }
+        
+        .img-caption {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: #666;
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        blockquote {
+            border-left: 4px solid #d10000;
+            margin: 20px 0;
+            padding-left: 20px;
+            font-style: italic;
+            font-size: 22px;
+            color: #444;
+        }
+
+        /* Sidebar items */
+        .sidebar h3 {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #d10000;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .side-news {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .side-news h4 {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        Edizione Nazionale &bull; Venerdì 12 Giugno 2026 &bull; Meteo: Roma 28°C
+    </div>
+    <div class="logo">IL CORRIERE NAZIONALE</div>
+    <div class="sub-logo">LA LIBERTÀ DELLE IDEE</div>
+</header>
+
+<nav>
+    <a href="#">HOME</a>
+    <a href="#">POLITICA</a>
+    <a href="#">CRONACA</a>
+    <a href="#">ECONOMIA</a>
+    <a href="#" style="color:#d10000;">SCIENZA & NATURA</a>
+    <a href="#">SPORT</a>
+    <a href="#">TECNOLOGIA</a>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <span class="category">Etologia e Benessere</span>
+        <h1>Allarme dagli etologi: "Il sonno è vitale, lo dimostra drammaticamente lo Scimpanzé Confuso"</h1>
+        <div class="summary">
+            Uno studio dell'Istituto di Primatologia Onirica (IPO) rivela dati scioccanti: privati del riposo, gli esemplari di questa rara specie iniziano a scambiare i sassi per banane e a camminare in moonwalk.
+        </div>
+
+        <div class="meta-info">
+            di <strong>un giornalista <u>molto assonnato</u></strong> | 12 Giugno 2026 | <span style="color:#d10000">Riproduzione riservata</span>
+        </div>
+
+        <div class="fake-img">
+            <img src="img\scimpanze_confuso.jpg" alt="Scimpanzé che fissa il vuoto" style="width:100%; height:100%; object-fit:cover; opacity:0.8;">
+        </div>
+        <div class="img-caption">Un esemplare di Pan troglodytes perplexus mentre cerca di sbucciare una pigna dopo una notte in bianco.</div>
+
+        <div class="article-body">
+            <p><strong>GINEVRA</strong> - Credevate che dormire otto ore fosse solo un vecchio e noioso consiglio della nonna? Vi sbagliavate. E di grosso. L'importanza cruciale del riposo notturno è stata definitivamente provata osservando una rarissima e bizzarra sottospecie di primate: il <em>Pan troglodytes perplexus</em>, volgarmente noto come <strong>"Scimpanzé Confuso"</strong>.</p>
+
+            <p>I risultati, pubblicati ieri sulla prestigiosa rivista scientifica <em>The Lancet Primatology</em>, sono allarmanti: se privato delle sue canoniche 12 ore di sonno, questo animale perde completamente la bussola cognitiva e il senso del ridicolo.</p>
+
+            <blockquote>"Abbiamo documentato episodi di esemplari in debito di sonno che tentavano di corteggiare dei cespugli o di usare foglie secche come smartphone."</blockquote>
+
+            <p>Il  <strong>Professor Ugo Macachi</strong>, a capo della ricerca, spiega il fenomeno della cosiddetta <strong>"Sindrome da Deficit Onirico Scimmiesco"</strong>. «Quando il <em>P. t. perplexus</em> non raggiunge la fase REM per due notti di fila», spiega Macachi, «il cervello entra in un loop di disorientamento cronico. I livelli di melatonina crollano, l'attività sinaptica si inceppa e la scimmia inizia letteralmente a dimenticare come si fa la scimmia».</p>
+
+            <h3>Il pericolo nascosto nella carenza di riposo</h3>
+            <p>Ma non è solo una questione di sonnolenza diurna. L'impatto sul sistema nervoso porta a gravi "crisi d'identità temporanee". In soggetti particolarmente stanchi, gli etologi hanno notato il tentativo frustrante di sbucciare rocce di fiume convinti fossero noci di cocco. In soggetti predisposti, il disorientamento spaziale porta l'animale a deambulare per la foresta muovendosi esclusivamente all'indietro.</p>
+
+            <p>«Ho visto un maschio alfa, solitamente fiero e rispettato, piangere disperatamente perché non riusciva ad accendere il fuoco strofinando due banane», racconta un ricercatore che ha trascorso mesi nella giungla. «Credevo fosse un comportamento rituale di sottomissione, invece era solo devastantemente stanco».</p>
+
+            <h3>Le raccomandazioni per l'Homo Sapiens</h3>
+            <p>L'Istituto di Primatologia suggerisce che queste scoperte siano un monito diretto anche per noi esseri umani. Le maratone notturne su Netflix, il lavoro fino a tardi o il banale scrolling compulsivo sul telefono potrebbero avvicinarci pericolosamente al livello cognitivo dello scimpanzé confuso. Il consiglio degli esperti è chiaro: <strong>dormite almeno 8 ore a notte</strong> o, in alternativa, tenete lontani i sassi se vi viene improvvisamente fame al risveglio.</p>            
+            <p>La prossima volta che vi vanterete con i colleghi di "aver dormito solo tre ore ed essere comunque produttivi", pensateci due volte: il rischio di iniziare a salutare i distributori automatici è dietro l'angolo.</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Ultim'ora</h3>
+        
+        <div class="side-news">
+            <span style="font-size:10px; color:#999;">12:45</span>
+            <h4>Borsa: Milano in rosso, pesa il calo della produttività da sonnolenza.</h4>
+        </div>
+        
+        <div class="side-news">
+            <span style="font-size:10px; color:#999;">12:30</span>
+            <h4>Meteo: arriva l'anticiclone "Morfeo", sbadigli diffusi previsti nel weekend.</h4>
+        </div>
+
+        <div class="side-news">
+            <span style="font-size:10px; color:#999;">11:15</span>
+            <h4>Tecnologia: la nuova app per monitorare il sonno consuma il 100% della batteria mentre dormi.</h4>
+        </div>
+
+        <div style="margin-top: 40px; background: #eee; height: 250px; display:flex; align-items:center; justify-content:center; text-align:center; color:#999; font-family:Arial;">
+            PUBBLICITÀ
+        </div>
+        <div>
+            <img src="img\Prof_Macachi_IPO.webp" alt="Advertisement" style="width:100%; margin-top:20px;">
+            <p><i>Il Professor Ugo Macachi</i></p>
+        </div>
+    </div>
+</div>
+
+<footer style="background:#333; color:#fff; text-align:center; padding:20px; font-family:Arial, sans-serif; font-size:12px; margin-top:40px;">
+    &copy; 2026 Editoriale Il Corriere Nazionale S.p.A. - P.IVA 00748931001 - Tutti i diritti riservati.
+</footer>
+
+</body>
+</html>
