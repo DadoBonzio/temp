@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo Scandalo Nitharotto - Il Corriere Nazionale</title>
+    <style>
+        /* Reset e Stili Base che imitano i quotidiani italiani */
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a { text-decoration: none; color: #000; }
+        a:hover { text-decoration: underline; }
+
+        /* Header stile "Corriere" / "Repubblica" */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .top-bar {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: #666;
+            text-transform: uppercase;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            font-family: 'Times New Roman', serif;
+            font-size: 48px;
+            font-weight: bold;
+            color: #000;
+            letter-spacing: -1px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .sub-logo {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: #d10000; /* Rosso tipico giornali */
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Menu Navigazione */
+        nav {
+            background: #fff;
+            border-bottom: 2px solid #000;
+            padding: 10px 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        nav a { margin: 0 15px; color: #333; }
+
+        /* Layout Articolo */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 40px;
+        }
+
+        .main-content { flex: 3; }
+        .sidebar { flex: 1; border-left: 1px solid #eee; padding-left: 20px; }
+
+        /* Tipografia Articolo */
+        .category {
+            font-family: Arial, sans-serif;
+            color: #d10000;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 38px;
+            line-height: 1.1;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .summary {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .meta-info {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: #888;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .article-body {
+            font-size: 19px;
+            color: #222;
+        }
+
+        .article-body p { margin-bottom: 20px; }
+
+        .article-body strong { font-weight: bold; }
+        
+        /* Elementi grafici finti */
+        .fake-img {
+            width: 100%;
+            height: 350px;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+            position: relative;
+            background-image: linear-gradient(45deg, #8e44ad, #f39c12);
+        }
+        
+        .img-caption {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: #666;
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        blockquote {
+            border-left: 4px solid #d10000;
+            margin: 20px 0;
+            padding-left: 20px;
+            font-style: italic;
+            font-size: 22px;
+            color: #444;
+        }
+
+        /* Sidebar items */
+        .sidebar h3 {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #d10000;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .side-news {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        .side-news h4 {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        Edizione Nazionale &bull; Giovedì 24 Settembre 2026 &bull; Meteo: Roma 24°C
+    </div>
+    <div class="logo">IL CORRIERE NAZIONALE</div>
+    <div class="sub-logo">LA LIBERTÀ DELLE IDEE</div>
+</header>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="#">POLITICA</a>
+    <a href="lo_scandalo_nitharotto.html" style="color:#d10000;">CRONACA</a>
+    <a href="#">ECONOMIA</a>
+    <a href="index.html">SCIENZA & NATURA</a>
+    <a href="#">SPORT</a>
+    <a href="#">TECNOLOGIA</a>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <span class="category">Misteri & Inchieste</span>
+        <h1>Lo Scandalo "Nitharotto": Il complotto delle Leggi di Murphy e l'enigma degli orari esoterici</h1>
+        <div class="summary">
+            Spacciava saggezza dal sito formikaio.net, ma nascondeva un oscuro segreto. Gli investigatori si interrogano sui messaggi in codice inviati quotidianamente. È l'inizio di una cospirazione massonica?
+        </div>
+
+        <div class="meta-info">
+            di <strong>un giornalista <u>molto sfortunato</u></strong> | 24 Settembre 2026 | <span style="color:#d10000">Esclusiva Nazionale</span>
+        </div>
+
+        <div class="fake-img">
+            <h2 style="color: white; text-shadow: 2px 2px 4px #000;">13:19 - 11:21 - 21:11</h2>
+        </div>
+        <div class="img-caption">Ricostruzione grafica dei pattern numerici intercettati dal celebre gruppo: "gli Agenvers".</div>
+
+        <div class="article-body">
+            <p><strong>ROMA</strong> - Sembrava un passatempo innocuo, una piccola routine per allietare, o deprimere, le giornate dei suoi conoscenti. Eppure, dietro l'insospettabile figura di un giovane noto negli ambienti informali come <strong>"Nitharone"</strong> (o <strong>"Nitharzord"</strong>, o ancora <strong>"Nitharotto"</strong> per i più intimi, chiaro tributo alla sua ossessione per l'universo di Dragon Ball), si cela quello che molti definiscono già come <em>lo scandalo telematico dell'anno</em>.</p>
+
+            <p>Da mesi, Nitharotto bombarda inesorabilmente i suoi contatti estraendo giornalmente una delle oltre 400 Leggi di Murphy dal noto portale <em>formikaio.net</em>. "Se qualcosa può andar male, lo farà", recita il celebre adagio. Noto è a tutti, però, che impara a zoppicare chi con lo zoppo va, e "sfortunati" sono stati anche lui e la sua copertura, recentemente fatta saltare in aria dall'amico Carmine Belmonte, giovane promessa del Volley italiano. Da allora l'intero gruppo di amici, i cosiddetti "Agenvers", insospettiti dalla puntualità svizzera e vagamente inquietante del soggetto, hanno analizzato i log delle chat portando alla luce una verità che gela il sangue.</p>
+
+            <blockquote>"Ho appena notato che Nithar le sta mandando sempre allo stesso orario..." - Carmine Belmonte</blockquote>
+
+            <p>Questi orari, incapaci di allenare i loro occhi un po' allenati, hanno scatenato le speculazioni più selvagge dei dietrologi della rete. <strong>Perché proprio le 13.19?</strong> È forse un riferimento al celebre numero sfortunato? E le 11.21, che lette allo specchio si incastrano perfettamente con le 21.11?</p>
+
+            <h3>Codice massonico, alieni o l'evocazione di Shenron?</h3>
+            <p>Gli esperti di crittografia domestica si dividono. C'è chi sostiene che gli orari, convertiti in coordinate GPS, puntino esattamente a un misterioso server sotterraneo in Islanda; chi, tra i fan più accaniti dell'animazione giapponese, è convinto che Nitharotto stia in realtà accumulando energia sferica ereticamente mediante l'ansia generata dalle Leggi di Murphy, programmandone il rilascio proprio per le 21:11.</p>
+
+            <blockquote>"Ormai 1309 sarà un numero iconico negli Agenvers" - Matteo da Pomezia</blockquote>
+
+            <p>«Lo sapevo», ha dichiarato il fuoco del gruppo WhatsApp vedendo la notifica all'orario sospetto. «Ieri ci ha mandato la <em>Legge della lettera</em> esattamente alle 21.11. Ho guardato il telefono e ho sentito un brivido. Nitharotto sa qualcosa che noi ignoriamo», Ha aggiunto un intervistato assolutamente non coinvolto con la redazione.</p>
+
+            <h3>I sospetti si allargano</h3>
+            <p>Mentre si attendono comunicati ufficiali da parte del diretto interessato, per ora limitatosi a smentire le accuse («Ma secondo me è pura coincidenza», diceva) la redazione si pone un interrogativo stringente: è possibile che Nitharotto soffra di carenza di sonno, come i poveri scimpanzé di cui si parlava lo scorso giugno? D'altro canto è da uno di loro che apprese l'esistenza delle leggi in primo luogo. D'altro canto, c'è anche chi si schiera dalla sua parte e sminuisce l'accaduto, dando tutta la colpa ad un banale script fatto per pigrizia o alle semplici coincidenze: «Secondo me ha impostato uno script (...) e la manda con l'api di whatsapp ogni 24 ore esatte», diceva Giona, altro amico di Nithar, su quello stesso gruppo.</p>
+            
+            <p>Una sola cosa è certa, e cioè che più si prosegue con le leggi più si verificano eventi bizzarri, i più noti dei quali: Gabriele delle Site, punta di diamante di dfcasting è stato sorpreso con del the al posto della birra, e Livia Laccisaglia si è rifatta viva dopo mesi di silenzio. La verità è là fuori, e, secondo la Legge di Murphy, la scopriremo nel peggior momento possibile.</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Ultime notizie</h3>
+        
+        <div class="side-news">
+            <span style="font-size:10px; color:#999;">20:45</span>
+            <h4><a href="index.html">Dall'Archivio: Allarme etologi, lo "Scimpanzé Confuso" e i danni da carenza di sonno</a></h4>
+        </div>
+        
+        <div class="side-news">
+            <span style="font-size:10px; color:#999;">20:10</span>
+            <h4>Tecnologia: formikaio.net registra un picco di accessi anomalo. Hacker russi o Nitharotto?</h4>
+        </div>
+
+        <div class="side-news">
+            <span style="font-size:10px; color:#999;">19:30</span>
+            <h4>Nitharotto prende 30 e lode: metodo o Murphy?</h4>
+        </div>
+
+        <div style="margin-top: 40px; background: #eee; height: 250px; display:flex; align-items:center; justify-content:center; text-align:center; color:#999; font-family:Arial; flex-direction:column; padding:20px; box-sizing:border-box;">
+            <strong style="color:#d10000; font-size:18px;">SEI VITTIMA DI MURPHY?</strong>
+            <p style="font-size:12px; margin-top:10px;">Scopri se anche i tuoi amici ti inviano messaggi a orari palindromi. Chiama il +13 192 111 1121.</p>
+        </div>
+    </div>
+</div>
+
+<footer style="background:#333; color:#fff; text-align:center; padding:20px; font-family:Arial, sans-serif; font-size:12px; margin-top:40px;">
+    &copy; 2026 Editoriale Il Corriere Nazionale S.p.A. - P.IVA 00748931001 - Tutti i diritti riservati.
+</footer>
+
+</body>
+</html>
